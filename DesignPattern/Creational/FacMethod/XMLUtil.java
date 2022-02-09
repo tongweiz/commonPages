@@ -1,6 +1,5 @@
-package Factory;
+package Creational.FacMethod;
 
-import com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
@@ -13,19 +12,18 @@ public class XMLUtil {
   public static Object getBean() {
     try {
       DocumentBuilderFactory dFactory = DocumentBuilderFactory.newInstance();
-      DocumentBuilder builder = dFactory.newDocumentBuilder();
+      DocumentBuilder dBuilder = dFactory.newDocumentBuilder();
       Document doc;
-      doc = builder.parse(new File("Factory/config.xml"));
+      doc = dBuilder.parse(new File("Creational/FacMethod/config.xml"));
 
-      NodeList nl = doc.getElementsByTagName("className");
+      NodeList nl = doc.getElementsByTagName("chartType");
       Node classNode = nl.item(0).getFirstChild();
       String cName = classNode.getNodeValue();
 
       Class c = Class.forName(cName);
       Object obj = c.newInstance();
-      return obj;
-    }
-    catch(Exception e) {
+      return  obj;
+    } catch(Exception e) {
       e.printStackTrace();
       return null;
     }
