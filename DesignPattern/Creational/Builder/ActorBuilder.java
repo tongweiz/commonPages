@@ -8,7 +8,11 @@ abstract class ActorBuilder {
   public abstract void buildHand();
   public abstract void buildEye();
 
-  public Actor createActor(){
+  public Actor construct() {
+    this.buildHand();
+    this.buildSex();
+    this.buildEye();
+    this.buildType();
     return actor;
   }
 }
