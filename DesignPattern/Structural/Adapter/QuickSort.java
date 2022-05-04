@@ -20,17 +20,23 @@ public class QuickSort {
         }
     }
 
-    private int getPartition(int[] array, int left, int right) {
-        int pivot = array[right];
-        int fIndex = left - 1;
-        for(int i=left; i<=right-1; i++) {
-            if(array[i]<=pivot) {
-                fIndex++;
-                swap(array, fIndex, i);
-            }
+    public int getPartition(int[] arr, int left, int right) {
+        int mid = left + (right - left) / 2;
+        int partVal = arr[mid];
+
+        while (left <= right) {
+            while (arr[left] < partVal)
+                left++;
+
+            while (arr[right] > partVal)
+                right--;
+
+            if (left <= right)
+                swap(arr, left++, right--);
+
         }
-        swap(array,fIndex+1,right);
-        return fIndex+1;
+
+        return left - 1;
     }
 
     private void swap(int[] array, int i, int j) {
@@ -39,4 +45,9 @@ public class QuickSort {
         array[j] = temp;
     }
 
+    public static void main(String[] args) {
+        QuickSort qs = new QuickSort();
+        int[] array = {5,2,3,1,6,7};
+        System.out.println(Arrays.toString(qs.quickSort(array)));
+    }
 }

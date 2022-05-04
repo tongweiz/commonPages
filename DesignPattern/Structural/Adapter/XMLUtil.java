@@ -14,7 +14,7 @@ public class XMLUtil {
             DocumentBuilderFactory dFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder dBuilder = dFactory.newDocumentBuilder();
             Document doc;
-            doc = dBuilder.parse(new File("DesignPattern/Structural/Adapter/Config.xml"));
+            doc = dBuilder.parse(new File("Structural/Adapter/Config.xml"));
 
             NodeList nl = doc.getElementsByTagName("className");
             String className = nl.item(0).getFirstChild().getNodeValue();

@@ -1,6 +1,6 @@
 package Structural.Adapter;
 
-public class BinarySearch {
+public class     BinarySearch {
 
     public int bSearch(int[] array, int key) {
         int minIndex = 0, maxIndex = array.length-1;

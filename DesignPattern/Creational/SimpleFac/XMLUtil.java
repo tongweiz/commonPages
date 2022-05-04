@@ -14,7 +14,7 @@ public class XMLUtil {
       DocumentBuilderFactory dFactory = DocumentBuilderFactory.newInstance();
       DocumentBuilder dBuilder = dFactory.newDocumentBuilder();
       Document doc;
-      doc = dBuilder.parse(new File("DesignPattern/Creational/SimpleFac/config.xml"));
+      doc = dBuilder.parse(new File("DesignPattern/Creational/SimpleFac/Config.xml"));
 
       NodeList nl = doc.getElementsByTagName("chartType");
       Node classNode = nl.item(0).getFirstChild();
