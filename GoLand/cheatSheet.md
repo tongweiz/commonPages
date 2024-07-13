@@ -2,7 +2,8 @@ a alt
 c ctrl  
 s1 shift  
 s2 space  
-e enter  
+e enter
+t tab
 
 * Views:
   * a+1 project view
@@ -35,3 +36,25 @@ e enter
   * a+s1+j deselect the last occurance
   * c+a+s1+j select all occurance in the file
   
+* Code Completion
+  * type `fmtpri` select the function Printf, `Enter`
+    * c+s2 to see completion suggestion, t replace the word
+  * type a dot after string and press `c+s2 twice`, IDE finds all functions that accept string as the first argument
+  * Postfix completion - type the dot after the `variable` name
+
+* Statement Completion
+  * c+s1+e complete the for statement (add the parentheses)
+  * type `if` then press `enter` generate statement
+  * add the if condition, then press `c+s1+e` jump into the if statement
+
+* Refactorings
+  * place the caret in a symbol then type `s1+f6`
+  * c+a+v extract the variable, select a express -> type -> `enter`
+  * c+a+n inline variable
+  * c+a+m extract method
+  * c+a+s1+t list all refactoring options
+
+* Code assistance
+  * right click -> `local history`
+  * c+a+l GoLand reformat the selected code or whole file
+  * c+a+s1+F go fmt
