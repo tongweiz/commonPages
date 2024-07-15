@@ -58,3 +58,4 @@ t tab
   * right click -> `local history`
   * c+a+l GoLand reformat the selected code or whole file
   * c+a+s1+F go fmt
+  * c+p see the method signature
