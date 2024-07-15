@@ -59,3 +59,8 @@ t tab
   * c+a+l GoLand reformat the selected code or whole file
   * c+a+s1+F go fmt
   * c+p see the method signature
+  * c+q to see the doc
+  * c+s1+i to see the definition of the symbol
+  * copy and past a JSON could convert JSON to a struct type automatically
+    * c+a+s1+t select the embeded struct then extract it out
+    * a+e click **change field..** update the field names in tags to camelCase 
