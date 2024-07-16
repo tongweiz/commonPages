@@ -87,6 +87,6 @@ t tab
   * s1+esc hide the the pined detailed view
     * a+3 show the find view again
   * c+a+b look for implementation of method
-  * c+a+b explore the whole hierarchy for the method
+  * c+a+h explore the whole hierarchy for the method
   * c+h view the subtypes
     
