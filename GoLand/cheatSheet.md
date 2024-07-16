@@ -64,3 +64,5 @@ t tab
   * copy and past a JSON could convert JSON to a struct type automatically
     * c+a+s1+t select the embeded struct then extract it out
     * a+e click **change field..** update the field names in tags to camelCase 
+    * a+e click **update key value in tags**, and extra thing like **omitempty**
+    
