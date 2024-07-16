@@ -65,4 +65,28 @@ t tab
     * c+a+s1+t select the embeded struct then extract it out
     * a+e click **change field..** update the field names in tags to camelCase 
     * a+e click **update key value in tags**, and extra thing like **omitempty**
+
+* Navigation
+  * c+b go to the declaration from a function name in the comment
+  * c+u go to the interface of the func
+  * c+s1+f open Find in files
+  * a+w apply word search
+  * c+f12 open the preview of the big file
+  * type part of the method to find the method - hosa to find printHomoSapiens
+  * a+7 to show the file structure as a tool window
+  * c+e to show the recently opened files, type prefix to search the file
+  * c+s1+e to show recent locations
+  * delete to delete the files from recently opened
+  * c+f search the highlighted text
+    * enter go to the next
+    * s1+f3 go to the previous
+  * c+n search by type
+  * c+a+s1+n look for a method
+  * c+s1+n look for a file
+  * a+f7 to show the detailed view of usages
+  * s1+esc hide the the pined detailed view
+    * a+3 show the find view again
+  * c+a+b look for implementation of method
+  * c+a+b explore the whole hierarchy for the method
+  * c+h view the subtypes
     
